@@ -181,6 +181,23 @@ export default function App() {
       {activeTab === "Education" && (
         <div className="mt-10 space-y-4 text-justify">
           <div className="bg-base-300 shadow-md p-6 rounded-md">
+            <h2 className="text-xl font-bold mb-2">UPN Veteran Jawa Timur</h2>
+            <p className="text-sm opacity-80 mb-2">
+              <span className="font-semibold">Bachelor’s Degree:</span> Informatics (2020 - 2025)
+              <br />
+              <span className="font-semibold">GPA:</span> 3.59
+            </p>
+            <p className="text-sm opacity-80">
+              Throughout my studies, I focused on software development, web technologies, and data science. For my undergraduate thesis, I conducted research on <b>“Classification of Thyroid Cancer Recurrence Using Stack Ensemble and SMOTE”.</b>
+              The study utilized the Differentiated Thyroid Cancer Recurrence dataset from the UCI Machine Learning Repository and was implemented in <b>Python</b> using libraries such as <b>pandas, numpy, matplotlib, seaborn, scikit-learn, imbalanced-learn, </b>and <b> joblib </b>.
+            </p>
+            <p className="text-sm opacity-80 mt-2">
+              In this work, I applied a <b>stack ensemble learning </b> approach, which combines multiple base models like <b>Decision Tree, Support Vector Machine (SVM), </b> and <b>Logistic Regression </b> in order to achieve better predictive performance compared to individual models.
+              To address the issue of class imbalance in the dataset, I used <b>SMOTE (Synthetic Minority Over-sampling Technique)</b>, a method that generates synthetic samples for underrepresented classes to improve model fairness and accuracy.
+              The project was further deployed as a <b> Flask-based web application </b> and successfully registered as an intellectual property with registration number <b>EC002025073061.</b>
+            </p>
+          </div>
+          <div className="bg-base-300 shadow-md p-6 rounded-md">
             <h2 className="text-xl font-bold mb-2">SMK Negeri 1 Turen</h2>
             <p className="text-sm opacity-80 mb-2">
               <span className="font-semibold">Major:</span> Teknik Komputer dan Jaringan (2016 - 2019)
@@ -199,24 +216,6 @@ export default function App() {
               <li>Installing and maintaining LAN cable infrastructure</li>
               <li>Providing routine maintenance for network systems</li>
             </ul>
-          </div>
-
-          <div className="bg-base-300 shadow-md p-6 rounded-md">
-            <h2 className="text-xl font-bold mb-2">UPN Veteran Jawa Timur</h2>
-            <p className="text-sm opacity-80 mb-2">
-              <span className="font-semibold">Bachelor’s Degree:</span> Informatics (2020 - 2025)
-              <br />
-              <span className="font-semibold">GPA:</span> 3.59
-            </p>
-            <p className="text-sm opacity-80">
-              Throughout my studies, I focused on software development, web technologies, and data science. For my undergraduate thesis, I conducted research on <b>“Classification of Thyroid Cancer Recurrence Using Stack Ensemble and SMOTE”.</b>
-              The study utilized the Differentiated Thyroid Cancer Recurrence dataset from the UCI Machine Learning Repository and was implemented in <b>Python</b> using libraries such as <b>pandas, numpy, matplotlib, seaborn, scikit-learn, imbalanced-learn, </b>and <b> joblib </b>.
-            </p>
-            <p className="text-sm opacity-80 mt-2">
-              In this work, I applied a <b>stack ensemble learning </b> approach, which combines multiple base models like <b>Decision Tree, Support Vector Machine (SVM), </b> and <b>Logistic Regression </b> in order to achieve better predictive performance compared to individual models.
-              To address the issue of class imbalance in the dataset, I used <b>SMOTE (Synthetic Minority Over-sampling Technique)</b>, a method that generates synthetic samples for underrepresented classes to improve model fairness and accuracy.
-              The project was further deployed as a <b> Flask-based web application </b> and successfully registered as an intellectual property with registration number <b>EC002025073061.</b>
-            </p>
           </div>
         </div>
       )}
