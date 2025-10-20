@@ -51,7 +51,7 @@ export default function App() {
       title: "Website Profil Sekolah Menggunakan Laravel dan Bootstrap",
       tech: "Laravel, Bootstrap, PHP, JavaScript, HTML, CSS",
       img: tanada,
-      link: "https://donxuiqote.github.io/toko-obat"
+      link: "https://github.com/donxuiqote/DMJ_Projek"
     },
     {
       title: "Analisis dan Desain Jaringan Lab PTIK Gedung FIK UPN Veteran Jawa Timur",
