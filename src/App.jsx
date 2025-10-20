@@ -57,7 +57,7 @@ export default function App() {
       title: "Analisis dan Desain Jaringan Lab PTIK Gedung FIK UPN Veteran Jawa Timur",
       tech: "Packet Tracer",
       img: analisis,
-      link: "https://donxuiqote.github.io/toko-obat"
+      link: "https://github.com/donxuiqote/DMJ_Projek"
     },
     {
       title: "Game Arkade Plane Dash",
