@@ -45,31 +45,31 @@ export default function App() {
       title: "Sistem aplikasi berbasis web untuk klasifikasi kambuh kanker tiroid",
       tech: "Flask, Python, SMOTE, Stack Ensemble, Decision Tree, SVM, Logistic Regression",
       img: tcrpredict,
-      link: "https://endinrahmanda.github.io/photobox"
+      link: "https://donxuiqote.github.io/photobox"
     },
     {
       title: "Website Profil Sekolah Menggunakan Laravel dan Bootstrap",
       tech: "Laravel, Bootstrap, PHP, JavaScript, HTML, CSS",
       img: tanada,
-      link: "https://endinrahmanda.github.io/toko-obat"
+      link: "https://donxuiqote.github.io/toko-obat"
     },
     {
       title: "Analisis dan Desain Jaringan Lab PTIK Gedung FIK UPN Veteran Jawa Timur",
       tech: "Packet Tracer",
       img: analisis,
-      link: "https://endinrahmanda.github.io/toko-obat"
+      link: "https://donxuiqote.github.io/toko-obat"
     },
     {
       title: "Game Arkade Plane Dash",
       tech: "JavaScript",
       img: planeDash,
-      link: "https://endinrahmanda.github.io/planeDash/"
+      link: "https://donxuiqote.github.io/planeDash/"
     },
     {
       title: "Game Arkade Fruit Slash",
       tech: "JavaScript, Construct2",
       img: fruitSlash,
-      link: "https://endinrahmanda.github.io/fruit-slash/"
+      link: "https://donxuiqote.github.io/fruit-slash/"
     },
   ];
 
