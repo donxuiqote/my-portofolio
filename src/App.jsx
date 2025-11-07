@@ -108,7 +108,7 @@ export default function App() {
         </a>
         <a
           className="btn btn-outline btn-sm"
-          href="https://github.com/endinrahmanda"
+          href="https://github.com/donxuiqote"
           target="_blank"
           rel="noopener noreferrer"
         >
