@@ -45,13 +45,13 @@ export default function App() {
       title: "Sistem aplikasi berbasis web untuk klasifikasi kambuh kanker tiroid",
       tech: "Flask, Python, SMOTE, Stack Ensemble, Decision Tree, SVM, Logistic Regression",
       img: tcrpredict,
-      link: "https://donxuiqote.github.io/photobox"
+      link: "https://drive.google.com/file/d/1oBuh6ldmxof_zhi7l27M_PfIN4XkzF5b/view?usp=sharing"
     },
     {
       title: "Website Profil Sekolah Menggunakan Laravel dan Bootstrap",
       tech: "Laravel, Bootstrap, PHP, JavaScript, HTML, CSS",
       img: tanada,
-      link: "https://github.com/donxuiqote/DMJ_Projek"
+      link: "https://drive.google.com/file/d/1d1B0bnqMQXrqhnZ6hbYt8H5tNDBzznys/view"
     },
     {
       title: "Analisis dan Desain Jaringan Lab PTIK Gedung FIK UPN Veteran Jawa Timur",
