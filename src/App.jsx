@@ -13,10 +13,8 @@ import analisis from "./assets/project/analisis jaringan.png";
 import planeDash from "./assets/project/plane dash.png";
 import fruitSlash from "./assets/project/fruit slash.png";
 
-
-
 export default function App() {
-  const [activeTab, setActiveTab] = useState("Skills");
+  const [activeTab, setActiveTab] = useState("Experience");
   const [selectedCert, setSelectedCert] = useState(null);
 
   const skills = [
@@ -72,7 +70,6 @@ export default function App() {
       link: "https://donxuiqote.github.io/fruit-slash/"
     },
   ];
-
 
   return (
     <div className=" text-base-content flex flex-col max-w-4xl mx-auto pb-6">
@@ -131,7 +128,13 @@ export default function App() {
       </div>
 
       {/* Tabs */}
-      <div className="mt-10 tabs tabs-boxed">
+      <div className="mt-10 tabs tabs-boxed flex-wrap">
+        <a
+          className={`tab ${activeTab === "Experience" ? "tab-active" : ""}`}
+          onClick={() => setActiveTab("Experience")}
+        >
+          Experience
+        </a>
         <a
           className={`tab ${activeTab === "Skills" ? "tab-active" : ""}`}
           onClick={() => setActiveTab("Skills")}
@@ -163,6 +166,56 @@ export default function App() {
           Projects
         </a>
       </div>
+
+      {/* EXPERIENCE SECTION */}
+      {activeTab === "Experience" && (
+        <div className="mt-10 space-y-6 text-justify">
+          <div className="bg-base-300 shadow-md p-6 rounded-md">
+            <div className="flex flex-col sm:flex-row justify-between mb-2">
+              <h2 className="text-xl font-bold">Web Developer</h2>
+              <span className="text-sm font-semibold opacity-70 bg-base-100 px-3 py-1 rounded-full w-fit">May 2026 - Aug 2026</span>
+            </div>
+            <p className="text-md font-semibold mb-3">
+              <i className="fa-solid fa-building mr-2"></i>Rekonesia - Jakarta, Indonesia
+            </p>
+            <ul className="list-disc list-outside ml-5 space-y-2 text-sm opacity-80">
+              <li>Prepared system analysis and technical documentation including Business Process Analysis, Use Case Diagrams, Activity Diagrams, and ERD[cite: 3].</li>
+              <li>Developed web-based information systems using Laravel, including authentication, role-based access control, and email verification using Gmail SMTP[cite: 3].</li>
+              <li>Implemented containerization with Docker and performed QA/manual testing to ensure features functioned according to requirements[cite: 3].</li>
+            </ul>
+          </div>
+
+          <div className="bg-base-300 shadow-md p-6 rounded-md">
+            <div className="flex flex-col sm:flex-row justify-between mb-2">
+              <h2 className="text-xl font-bold">Staff Data and Analyst</h2>
+              <span className="text-sm font-semibold opacity-70 bg-base-100 px-3 py-1 rounded-full w-fit">Nov 2025 - Jun 2026</span>
+            </div>
+            <p className="text-md font-semibold mb-3">
+              <i className="fa-solid fa-building-columns mr-2"></i>Kementerian Imigrasi dan Pemasyarakatan - Jakarta
+            </p>
+            <ul className="list-disc list-outside ml-5 space-y-2 text-sm opacity-80">
+              <li>Developed RUMAH PRIMA, a web-based procurement and inventory management system using Laravel, Tailwind CSS, and MySQL[cite: 3].</li>
+              <li>Developed BPSDM Dalam Angka, a Laravel-based web dashboard for visualizing institutional performance and statistical recapitulation[cite: 3].</li>
+              <li>Produced system analysis and technical documentation (DFD, Sitemap, Functional Analysis, and Use Case Diagrams)[cite: 3].</li>
+            </ul>
+          </div>
+
+          <div className="bg-base-300 shadow-md p-6 rounded-md">
+            <div className="flex flex-col sm:flex-row justify-between mb-2">
+              <h2 className="text-xl font-bold">IT Support and Network Technician</h2>
+              <span className="text-sm font-semibold opacity-70 bg-base-100 px-3 py-1 rounded-full w-fit">Dec 2017 - Jun 2018</span>
+            </div>
+            <p className="text-md font-semibold mb-3">
+              <i className="fa-solid fa-network-wired mr-2"></i>PSIK FEB Universitas Brawijaya - Malang
+            </p>
+            <ul className="list-disc list-outside ml-5 space-y-2 text-sm opacity-80">
+              <li>Provided IT support by troubleshooting hardware, software, and network connectivity issues[cite: 3].</li>
+              <li>Performed mass Windows OS deployment to laboratory computers using a centralized deployment server[cite: 3].</li>
+              <li>Supported network infrastructure implementation through router/switch installation, UTP crimping, and office network setup[cite: 3].</li>
+            </ul>
+          </div>
+        </div>
+      )}
 
       {activeTab === "Skills" && (
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
@@ -219,6 +272,7 @@ export default function App() {
           </div>
         </div>
       )}
+      
       {activeTab === "Publications" && (
         <div className="mt-10 space-y-4">
           {[
@@ -269,6 +323,7 @@ export default function App() {
           ))}
         </div>
       )}
+
       {activeTab === "Certificate" && (
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-10">
           {certificates.map((cert, idx) => (
@@ -308,6 +363,7 @@ export default function App() {
           </div>
         </div>
       )}
+
       {activeTab === "Projects" && (
         <div className="mt-10 space-y-4">
           {projects.map((proj, idx) => (
