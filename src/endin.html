@@ -1,2 +1,379 @@
-kwektgrmvgrmklg
-ekdc
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Endin Rahmanda Putri | Portfolio</title>
+
+  <!-- Tailwind & DaisyUI CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      plugins: [daisyui],
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.js"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e0e6ad54.js" crossorigin="anonymous"></script>
+
+  <style>
+    .hidden-tab { display: none; }
+  </style>
+</head>
+<body class="text-base-content flex flex-col max-w-4xl mx-auto pb-10 px-4">
+
+  <!-- Header -->
+  <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mt-10">
+    <div class="flex-shrink-0">
+      <!-- Jika kamu sudah punya foto, biarkan path ini. Atau gunakan placeholder jika belum ada -->
+      <img src="./assets/img/endin.jpeg" onerror="this.src='https://picsum.photos/seed/profile/150/150'" alt="profile" class="w-32 h-32 object-cover rounded-full border-4 border-primary/20 shadow-md" />
+    </div>
+    <div class="text-center sm:text-left">
+      <h1 class="text-3xl font-bold mt-2">
+        Hey, it's <span class="text-primary">ENDIN RAHMANDA PUTRI</span> 👋
+      </h1>
+      <p class="text-emerald-500 font-medium mt-2 flex items-center justify-center sm:justify-start gap-2">
+        <span class="relative flex h-3 w-3">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        Available for Work
+      </p>
+      <p class="text-sm opacity-70 mt-1"><i class="fa-solid fa-location-dot mr-1"></i> Jakarta, DKI Jakarta</p>
+    </div>
+  </div>
+
+  <!-- Intro -->
+  <div class="max-w-3xl mt-6 text-center sm:text-left">
+    <p class="text-lg font-bold mb-2">Computer Science Graduate 🎓 | AI & Full-Stack Enthusiast 💻</p>
+    <p class="text-sm opacity-80 leading-relaxed text-justify">
+      Computer Science graduate with practical experience in <b>machine learning, artificial intelligence, full-stack web development, system analysis, and networking</b>. 
+      Experienced in developing enterprise web applications, ML models, technical documentation, and software testing. 
+      Proficient in <b>PHP, Python, JavaScript, Laravel, React, Flask, MySQL, PostgreSQL, Docker, Git,</b> and network administration.
+    </p>
+  </div>
+
+  <!-- Buttons -->
+  <div class="flex flex-wrap justify-center sm:justify-start gap-3 mt-6">
+    <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/1ILwCgpWuEXGnMVpOHanmEQouBdVIS3XE/view?usp=sharing" target="_blank">
+      Resume <i class="fa-solid fa-file-arrow-down"></i>
+    </a>
+    <a class="btn btn-outline btn-sm" href="https://github.com/endinrahmanda" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a class="btn btn-outline btn-sm" href="https://www.linkedin.com/in/endinrahmanda" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a class="btn btn-outline btn-sm" href="mailto:rahmandaendin@gmail.com">
+      <i class="fa fa-envelope"></i> Email
+    </a>
+  </div>
+
+  <!-- Tabs -->
+  <div class="mt-10 tabs tabs-boxed flex-wrap justify-center sm:justify-start">
+    <a class="tab tab-active" data-tab="experience">Experience</a>
+    <a class="tab" data-tab="projects">Projects</a>
+    <a class="tab" data-tab="skills">Skills</a>
+    <a class="tab" data-tab="education">Education</a>
+    <a class="tab" data-tab="publications">Publications & Patents</a>
+    <a class="tab" data-tab="certificate">Certificates</a>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div id="experience" class="tab-content mt-8 space-y-6 text-justify">
+    
+    <div class="bg-base-200/50 border border-base-300 shadow-sm p-6 rounded-xl">
+      <div class="flex flex-col sm:flex-row justify-between mb-2">
+        <h2 class="text-xl font-bold text-primary">Web Developer</h2>
+        <span class="text-sm font-semibold opacity-70 bg-base-300 px-3 py-1 rounded-full w-fit">May 2026 - Aug 2026</span>
+      </div>
+      <p class="text-md font-semibold mb-3"><i class="fa-solid fa-building mr-2"></i>Rekonesia - Jakarta, Indonesia</p>
+      <ul class="list-disc list-outside ml-5 space-y-2 text-sm opacity-80">
+        <li>Prepared system analysis and technical documentation (BPA, Use Case, Activity Diagrams, ERD).</li>
+        <li>Developed web-based info systems using Laravel (auth, RBAC, Gmail SMTP verification).</li>
+        <li>Implemented containerization with Docker and performed QA/manual testing to ensure requirements are met.</li>
+      </ul>
+    </div>
+
+    <div class="bg-base-200/50 border border-base-300 shadow-sm p-6 rounded-xl">
+      <div class="flex flex-col sm:flex-row justify-between mb-2">
+        <h2 class="text-xl font-bold text-primary">Staff Data and Analyst</h2>
+        <span class="text-sm font-semibold opacity-70 bg-base-300 px-3 py-1 rounded-full w-fit">Nov 2025 - Jun 2026</span>
+      </div>
+      <p class="text-md font-semibold mb-3"><i class="fa-solid fa-building-columns mr-2"></i>Kementerian Imigrasi dan Pemasyarakatan - Jakarta</p>
+      <ul class="list-disc list-outside ml-5 space-y-2 text-sm opacity-80">
+        <li>Developed <b>RUMAH PRIMA</b>, a web-based procurement and inventory management system using Laravel, Tailwind, and MySQL.</li>
+        <li>Developed <b>BPSDM Dalam Angka</b>, a Laravel-based web dashboard for visualizing institutional performance and statistics.</li>
+        <li>Produced comprehensive system analysis and technical documentation (DFD, Sitemap, Use Case).</li>
+      </ul>
+    </div>
+
+    <div class="bg-base-200/50 border border-base-300 shadow-sm p-6 rounded-xl">
+      <div class="flex flex-col sm:flex-row justify-between mb-2">
+        <h2 class="text-xl font-bold text-primary">IT Support and Network Technician</h2>
+        <span class="text-sm font-semibold opacity-70 bg-base-300 px-3 py-1 rounded-full w-fit">Dec 2017 - Jun 2018</span>
+      </div>
+      <p class="text-md font-semibold mb-3"><i class="fa-solid fa-network-wired mr-2"></i>PSIK FEB Universitas Brawijaya - Malang</p>
+      <ul class="list-disc list-outside ml-5 space-y-2 text-sm opacity-80">
+        <li>Provided IT support troubleshooting hardware, software, and network connectivity issues.</li>
+        <li>Performed mass Windows OS deployment to lab computers using a centralized server.</li>
+        <li>Supported network infrastructure (router/switch installation, UTP crimping, LAN setup).</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div id="projects" class="tab-content hidden-tab mt-8 space-y-6">
+    
+    <div class="bg-base-200/50 border border-base-300 shadow-sm p-5 rounded-xl flex flex-col sm:flex-row gap-5">
+      <img src="https://picsum.photos/seed/project1/400/300" alt="Rumah Prima" class="w-full sm:w-48 h-32 object-cover rounded-lg shadow-sm" />
+      <div class="flex-1 flex flex-col justify-between">
+        <div>
+          <h2 class="text-lg font-bold mb-1">RUMAH PRIMA - Procurement & Inventory System</h2>
+          <p class="text-xs font-semibold opacity-60 mb-2">Full Stack Web Development • Jun 2026</p>
+          <p class="text-sm opacity-80 mb-3 text-justify">Developed a digital workflow system for inventory requests, approvals, and distribution for BPSDM Kementerian Imigrasi dan Pemasyarakatan with interactive dashboards.</p>
+        </div>
+        <p class="text-sm text-primary font-semibold"><i class="fa-solid fa-code"></i> Laravel, Tailwind CSS, JS, MySQL</p>
+      </div>
+    </div>
+
+    <div class="bg-base-200/50 border border-base-300 shadow-sm p-5 rounded-xl flex flex-col sm:flex-row gap-5">
+      <!-- Pakai path gambar asli kamu untuk TCR Predict jika ada -->
+      <img src="./assets/project/tcrpredict.png" onerror="this.src='https://picsum.photos/seed/project2/400/300'" alt="TCR Predict" class="w-full sm:w-48 h-32 object-cover rounded-lg shadow-sm" />
+      <div class="flex-1 flex flex-col justify-between">
+        <div>
+          <h2 class="text-lg font-bold mb-1">Thyroid Cancer Recurrence Prediction</h2>
+          <p class="text-xs font-semibold opacity-60 mb-2">AI & Machine Learning • May 2025</p>
+          <p class="text-sm opacity-80 mb-3 text-justify">Built an ML model predicting thyroid cancer recurrence using Stacked Ensemble Learning (Decision Tree, SVM, Logistic Regression) and SMOTE to handle imbalanced data.</p>
+        </div>
+        <div class="flex items-center justify-between mt-2">
+          <p class="text-sm text-primary font-semibold"><i class="fa-solid fa-code"></i> Flask, Python, Scikit-learn, Pandas</p>
+          <a href="https://endinrahmanda.github.io/photobox" target="_blank" class="btn btn-outline btn-xs">Link <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-base-200/50 border border-base-300 shadow-sm p-5 rounded-xl flex flex-col sm:flex-row gap-5">
+      <img src="https://picsum.photos/seed/project3/400/300" alt="Diabetes CBR" class="w-full sm:w-48 h-32 object-cover rounded-lg shadow-sm" />
+      <div class="flex-1 flex flex-col justify-between">
+        <div>
+          <h2 class="text-lg font-bold mb-1">Diabetes Diagnosis using Case Based Reasoning</h2>
+          <p class="text-xs font-semibold opacity-60 mb-2">Machine Learning Desktop App • Sep 2024</p>
+          <p class="text-sm opacity-80 mb-3 text-justify">Implemented a CBR system using K-Nearest Neighbor (KNN) algorithm in a desktop application to classify diabetes cases based on patient similarity.</p>
+        </div>
+        <p class="text-sm text-primary font-semibold"><i class="fa-solid fa-code"></i> C++ (Qt), Python, KNN</p>
+      </div>
+    </div>
+
+    <div class="bg-base-200/50 border border-base-300 shadow-sm p-5 rounded-xl flex flex-col sm:flex-row gap-5">
+      <img src="https://picsum.photos/seed/project4/400/300" alt="Simulated Annealing" class="w-full sm:w-48 h-32 object-cover rounded-lg shadow-sm" />
+      <div class="flex-1 flex flex-col justify-between">
+        <div>
+          <h2 class="text-lg font-bold mb-1">Flight Operational Cost Optimization</h2>
+          <p class="text-xs font-semibold opacity-60 mb-2">Optimization Algorithm • Sep 2024</p>
+          <p class="text-sm opacity-80 mb-3 text-justify">Developed an optimization model using Simulated Annealing (SA) algorithm to identify cost-efficient flight schedules via probabilistic optimization.</p>
+        </div>
+        <p class="text-sm text-primary font-semibold"><i class="fa-solid fa-code"></i> Python, Pandas, Matplotlib</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SKILLS -->
+  <div id="skills" class="tab-content hidden-tab mt-8">
+    <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-4">
+      <!-- Menggunakan card sederhana untuk skill -->
+      <div class="card bg-base-200 shadow-sm p-4 flex flex-col items-center justify-center hover:bg-base-300 transition">
+        <i class="fab fa-php text-4xl text-[#777BB4]"></i><p class="mt-2 font-semibold text-sm">PHP</p>
+      </div>
+      <div class="card bg-base-200 shadow-sm p-4 flex flex-col items-center justify-center hover:bg-base-300 transition">
+        <i class="fab fa-python text-4xl text-[#3776AB]"></i><p class="mt-2 font-semibold text-sm">Python</p>
+      </div>
+      <div class="card bg-base-200 shadow-sm p-4 flex flex-col items-center justify-center hover:bg-base-300 transition">
+        <i class="fab fa-js-square text-4xl text-[#F7DF1E]"></i><p class="mt-2 font-semibold text-sm">JavaScript</p>
+      </div>
+      <div class="card bg-base-200 shadow-sm p-4 flex flex-col items-center justify-center hover:bg-base-300 transition">
+        <i class="fab fa-laravel text-4xl text-[#FF2D20]"></i><p class="mt-2 font-semibold text-sm">Laravel</p>
+      </div>
+      <div class="card bg-base-200 shadow-sm p-4 flex flex-col items-center justify-center hover:bg-base-300 transition">
+        <i class="fab fa-react text-4xl text-[#61DAFB]"></i><p class="mt-2 font-semibold text-sm">React.js</p>
+      </div>
+      <div class="card bg-base-200 shadow-sm p-4 flex flex-col items-center justify-center hover:bg-base-300 transition">
+        <i class="fas fa-pepper-hot text-4xl text-gray-700"></i><p class="mt-2 font-semibold text-sm">Flask</p>
+      </div>
+      <div class="card bg-base-200 shadow-sm p-4 flex flex-col items-center justify-center hover:bg-base-300 transition">
+        <i class="fas fa-database text-4xl text-[#4479A1]"></i><p class="mt-2 font-semibold text-sm">SQL / DB</p>
+      </div>
+      <div class="card bg-base-200 shadow-sm p-4 flex flex-col items-center justify-center hover:bg-base-300 transition">
+        <i class="fab fa-docker text-4xl text-[#2496ED]"></i><p class="mt-2 font-semibold text-sm">Docker</p>
+      </div>
+      <div class="card bg-base-200 shadow-sm p-4 flex flex-col items-center justify-center hover:bg-base-300 transition">
+        <i class="fab fa-git-alt text-4xl text-[#F05032]"></i><p class="mt-2 font-semibold text-sm">Git</p>
+      </div>
+      <div class="card bg-base-200 shadow-sm p-4 flex flex-col items-center justify-center hover:bg-base-300 transition">
+        <i class="fab fa-ubuntu text-4xl text-[#E95420]"></i><p class="mt-2 font-semibold text-sm">Linux</p>
+      </div>
+      <div class="card bg-base-200 shadow-sm p-4 flex flex-col items-center justify-center hover:bg-base-300 transition">
+        <i class="fab fa-bootstrap text-4xl text-[#7952B3]"></i><p class="mt-2 font-semibold text-sm">Bootstrap</p>
+      </div>
+      <div class="card bg-base-200 shadow-sm p-4 flex flex-col items-center justify-center hover:bg-base-300 transition">
+        <i class="fas fa-wind text-4xl text-[#06B6D4]"></i><p class="mt-2 font-semibold text-sm">Tailwind</p>
+      </div>
+      <div class="card bg-base-200 shadow-sm p-4 flex flex-col items-center justify-center hover:bg-base-300 transition">
+        <i class="fab fa-figma text-4xl text-[#F24E1E]"></i><p class="mt-2 font-semibold text-sm">Figma</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div id="education" class="tab-content hidden-tab mt-8 space-y-6 text-justify">
+    <div class="bg-base-200/50 border border-base-300 shadow-sm p-6 rounded-xl relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-2 h-full bg-primary"></div>
+      <h2 class="text-xl font-bold mb-1">UPN Veteran Jawa Timur</h2>
+      <p class="text-sm font-semibold opacity-80 mb-3">Bachelor’s Degree in Computer Science (Sep 2020 - Jun 2025) • GPA: 3.59/4.00</p>
+      <div class="text-sm opacity-80 space-y-2">
+        <p><b>Coursework:</b> Web Programming, System Analysis & Design, Data Mining.</p>
+        <p><b>Thesis:</b> Classification of Thyroid Cancer Recurrence Using Stack Ensemble and SMOTE.</p>
+      </div>
+    </div>
+
+    <div class="bg-base-200/50 border border-base-300 shadow-sm p-6 rounded-xl relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-2 h-full bg-gray-400"></div>
+      <h2 class="text-xl font-bold mb-1">SMK Negeri 1 Turen</h2>
+      <p class="text-sm font-semibold opacity-80 mb-3">Teknik Komputer dan Jaringan (2016 - 2019)</p>
+      <div class="text-sm opacity-80 space-y-2">
+        <p>Developed fundamental knowledge of computer networks, Mikrotik configuration, and LAN engineering.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PUBLICATIONS & PATENTS -->
+  <div id="publications" class="tab-content hidden-tab mt-8 space-y-6">
+    
+    <h3 class="text-2xl font-bold border-b pb-2 mb-4">Patents / Intellectual Property</h3>
+    <div class="bg-amber-100/50 border border-amber-200 shadow-sm p-5 rounded-xl">
+      <h2 class="text-lg font-bold mb-1">Klasifikasi Perulangan Kanker Tiroid Menggunakan Stack Ensemble dan SMOTE</h2>
+      <p class="text-sm font-semibold opacity-80 mb-2">Registered Copyright (Indonesia) No. EC002025073061 • Issued June 23, 2025</p>
+      <p class="text-sm opacity-80">Developed an AI-powered web application that implements Stacked Ensemble Learning and SMOTE to support early prediction of differentiated thyroid cancer recurrence using clinical data.</p>
+    </div>
+
+    <h3 class="text-2xl font-bold border-b pb-2 mb-4 mt-8">Publications</h3>
+    <div class="grid grid-cols-1 gap-4">
+      <div class="bg-base-200/50 border border-base-300 shadow-sm p-5 rounded-xl">
+        <h2 class="text-md font-bold mb-1">KLASIFIKASI PERULANGAN KANKER TIROID MENGGUNAKAN STACK ENSEMBLE DAN SMOTE</h2>
+        <p class="text-xs font-semibold opacity-70 mb-2">JATI (Jurnal Mahasiswa Teknik Informatika) • May 2025</p>
+        <p class="text-sm opacity-80 mb-3">Proposed a machine learning approach combining Stacked Ensemble Learning and SMOTE to improve thyroid cancer recurrence prediction on imbalanced clinical datasets, achieving up to 97% accuracy.</p>
+        <a href="https://ejournal.itn.ac.id/index.php/jati/article/view/13616" target="_blank" class="btn btn-outline btn-xs">Read <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+
+      <div class="bg-base-200/50 border border-base-300 shadow-sm p-5 rounded-xl">
+        <h2 class="text-md font-bold mb-1">PENGEMBANGAN GAME ARCADE 2D "FRUITDASH" MENGGUNAKAN JAVASCRIPT</h2>
+        <p class="text-xs font-semibold opacity-70 mb-2">Jurnal Methodika</p>
+        <p class="text-sm opacity-80">Developed a 2D arcade game using Construct 3 and JavaScript following the Game Development Life Cycle (GDLC).</p>
+      </div>
+
+      <div class="bg-base-200/50 border border-base-300 shadow-sm p-5 rounded-xl">
+        <h2 class="text-md font-bold mb-1">Implementasi Case Based Reasoning Untuk Mendiagnosis Diabetes Menggunakan K-NN</h2>
+        <p class="text-xs font-semibold opacity-70 mb-2">Santika (Seminar Nasional Informatika Bela Negara) • 2024</p>
+      </div>
+
+      <div class="bg-base-200/50 border border-base-300 shadow-sm p-5 rounded-xl">
+        <h2 class="text-md font-bold mb-1">Metode Simulated Annealing Untuk Optimasi Biaya Operasional Penerbangan</h2>
+        <p class="text-xs font-semibold opacity-70 mb-2">Santika (Seminar Nasional Informatika Bela Negara) • 2024</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATES -->
+  <div id="certificate" class="tab-content hidden-tab mt-8">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
+      <!-- Gunakan path asli kalau sudah ada, pakai picsum sementara untuk BNSP dll -->
+      <div class="card bg-base-200 shadow-sm p-2 cursor-pointer cert-card hover:-translate-y-1 transition duration-200" 
+           data-img="https://picsum.photos/seed/cert1/800/600" data-title="MikroTik Certified Network Associate (MTCNA)">
+        <img src="https://picsum.photos/seed/cert1/400/300" class="w-full h-32 object-cover rounded-md opacity-80 hover:opacity-100 transition" />
+        <p class="text-center mt-3 text-xs font-bold px-1 pb-2">MikroTik MTCNA</p>
+      </div>
+      
+      <div class="card bg-base-200 shadow-sm p-2 cursor-pointer cert-card hover:-translate-y-1 transition duration-200" 
+           data-img="https://picsum.photos/seed/cert2/800/600" data-title="Junior Web Developer (BNSP)">
+        <img src="https://picsum.photos/seed/cert2/400/300" class="w-full h-32 object-cover rounded-md opacity-80 hover:opacity-100 transition" />
+        <p class="text-center mt-3 text-xs font-bold px-1 pb-2">Junior Web Dev (BNSP)</p>
+      </div>
+
+      <div class="card bg-base-200 shadow-sm p-2 cursor-pointer cert-card hover:-translate-y-1 transition duration-200" 
+           data-img="https://picsum.photos/seed/cert3/800/600" data-title="Junior Network Administrator (BNSP)">
+        <img src="https://picsum.photos/seed/cert3/400/300" class="w-full h-32 object-cover rounded-md opacity-80 hover:opacity-100 transition" />
+        <p class="text-center mt-3 text-xs font-bold px-1 pb-2">Network Admin (BNSP)</p>
+      </div>
+
+      <div class="card bg-base-200 shadow-sm p-2 cursor-pointer cert-card hover:-translate-y-1 transition duration-200" 
+           data-img="https://picsum.photos/seed/cert4/800/600" data-title="Local Area Network Engineering (BNSP)">
+        <img src="https://picsum.photos/seed/cert4/400/300" class="w-full h-32 object-cover rounded-md opacity-80 hover:opacity-100 transition" />
+        <p class="text-center mt-3 text-xs font-bold px-1 pb-2">LAN Engineering (BNSP)</p>
+      </div>
+      
+      <div class="card bg-base-200 shadow-sm p-2 cursor-pointer cert-card hover:-translate-y-1 transition duration-200" 
+           data-img="https://picsum.photos/seed/cert5/800/600" data-title="Junior Graphic Designer (BNSP)">
+        <img src="https://picsum.photos/seed/cert5/400/300" class="w-full h-32 object-cover rounded-md opacity-80 hover:opacity-100 transition" />
+        <p class="text-center mt-3 text-xs font-bold px-1 pb-2">Graphic Designer (BNSP)</p>
+      </div>
+
+      <div class="card bg-base-200 shadow-sm p-2 cursor-pointer cert-card hover:-translate-y-1 transition duration-200" 
+           data-img="./assets/sertifikat/TOEFL.jpeg" data-title="TOEFL ITP - Score 539">
+        <img src="./assets/sertifikat/TOEFL.jpeg" onerror="this.src='https://picsum.photos/seed/cert6/400/300'" class="w-full h-32 object-cover rounded-md opacity-80 hover:opacity-100 transition" />
+        <p class="text-center mt-3 text-xs font-bold px-1 pb-2">TOEFL ITP</p>
+      </div>
+
+      <div class="card bg-base-200 shadow-sm p-2 cursor-pointer cert-card hover:-translate-y-1 transition duration-200" 
+           data-img="./assets/sertifikat/TOEIC.png" data-title="TOEIC - ETS (Score 705)">
+        <img src="./assets/sertifikat/TOEIC.png" onerror="this.src='https://picsum.photos/seed/cert7/400/300'" class="w-full h-32 object-cover rounded-md opacity-80 hover:opacity-100 transition" />
+        <p class="text-center mt-3 text-xs font-bold px-1 pb-2">TOEIC</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="certModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50 hidden transition-opacity">
+    <div class="bg-base-100 p-4 rounded-xl shadow-2xl relative max-w-4xl w-[90%] md:w-auto mx-auto mt-10">
+      <button id="closeModal" class="absolute -top-3 -right-3 btn btn-sm btn-circle btn-error text-white shadow-md">✕</button>
+      <img id="modalImg" src="" alt="" class="w-full max-h-[75vh] object-contain rounded-md" />
+      <p id="modalTitle" class="text-center mt-4 text-lg font-bold"></p>
+    </div>
+  </div>
+
+  <script>
+    // --- Tab logic ---
+    const tabs = document.querySelectorAll(".tab");
+    const contents = document.querySelectorAll(".tab-content");
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("tab-active"));
+        tab.classList.add("tab-active");
+        const target = tab.getAttribute("data-tab");
+        contents.forEach(c => c.classList.add("hidden-tab"));
+        document.getElementById(target).classList.remove("hidden-tab");
+      });
+    });
+
+    // --- Certificate modal logic ---
+    const modal = document.getElementById("certModal");
+    const modalImg = document.getElementById("modalImg");
+    const modalTitle = document.getElementById("modalTitle");
+    const closeModal = document.getElementById("closeModal");
+
+    document.querySelectorAll(".cert-card").forEach(card => {
+      card.addEventListener("click", () => {
+        modalImg.src = card.dataset.img;
+        modalTitle.textContent = card.dataset.title;
+        modal.classList.remove("hidden");
+      });
+    });
+    
+    closeModal.addEventListener("click", () => modal.classList.add("hidden"));
+    modal.addEventListener("click", e => {
+      if (e.target === modal) modal.classList.add("hidden");
+    });
+  </script>
+</body>
+</html>
